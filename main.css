@@ -1,0 +1,158 @@
+:root { --box-width: 1700px; }
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #62086b, #780785, #8e059f, #a403bb, #bb00d8);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 25px;
+}
+.main {
+    display:flex;
+    justify-content: center;
+    width: 80%;
+}
+.box {
+    margin-right: 10px;
+    background-color: #fafafa;
+    min-width: 450px;
+    max-width: 450px;
+    height: 600px;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0px 0px 30px -7px rgba(0,0,0,0.5);
+    text-align: center;
+}
+#boxes {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+    width: var(--box-width);
+    padding: 15px 0;
+}
+.addButton, .side-addButton {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 0;
+    background-color: rgb(78, 78, 214);
+    user-select: none;
+    transition: filter .15s ease-in-out;
+}
+.addButton:hover, .side-addButton:hover {
+    cursor: pointer;
+    filter: brightness(105%);
+}
+.side-addButton {
+    position: relative;
+    background-color: rgba(92, 92, 92, 0.6);
+    width: 40px;
+    border-radius: 15px;
+    padding: 0 25px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.main-menu {
+    margin-top: 70px;
+}
+.button, .beginButton {
+    background-color: #fafafa;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+}
+.button:hover {
+    cursor: pointer;
+    transform: translateX(4px);
+}
+.absolute {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bottomButtons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%; transform: translateX(-50%);
+    display: flex;
+}
+.beginButton {
+    margin-left: 10px;
+    cursor: pointer;
+} .beginButton:hover { transform: translateY(-2px); box-shadow: 0px 0px 30px -7px rgba(255, 255, 255, 0.5); }
+.final {
+    display: flex;
+    max-width: 90%;
+    overflow-x: scroll;
+    padding: 20px 0;
+}
+.group h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.group {
+    color: #fff;
+    background-color: #a91ebb;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.25);
+    margin: 0 6px;
+    min-width: 300px;
+}
+.teams {
+    color: #000;
+    border-radius: inherit;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 1px 0;
+}
+.window {
+    position: absolute;
+    top: -1000px; left: 50%;
+    transform: translate(-50%,50%);
+    transition: 0.45s ease-in-out;
+}
+.window-content {
+    min-height: 500px;
+    width: 600px;
+    background-color: rgb(178, 0, 74);
+    padding: 20px;
+}
+#window-textarea {
+    resize: none;
+    height: 350px;
+    width: 100%;
+    display: block;
+}
+.hideBtn {
+    height: 30px;
+    width: 100%;
+    background-color: #6b0808;
+    cursor: pointer;
+}

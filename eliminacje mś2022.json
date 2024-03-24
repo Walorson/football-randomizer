@@ -1,0 +1,10 @@
+{
+    "Baskets": [
+         ["Belgia","Francja","Anglia","Portugalia","Hiszpania","Włochy","Chorwacja","Dania","Niemcy","Holandia"],
+         ["Szwajcaria","Walia","Polska","Szwecja","Austria","Ukraina","Serbia","Turcja","Słowacja","Rumunia"],
+         ["Rosja","Węgry","Irlandia","Czechy","Norwegia","Irlandia","Islandia","Szkocja","Grecja","Finlandia"],
+         ["Bośnia i Hercegowina","Słowenia","Czarnogóra","Macedonia Północna","Albania","Bułgaria","Izrael","Białoruś","Gruzja","Luksemburg"],
+         ["Armenia","Cypr","Wyspy Owcze","Azerbejdżan","Estonia","Kosowo","Kazachstan","Litwa","Łotwa","Andora"],
+         ["Malta","Mołdawia","Lichtenstein","Gibraltar","San Marino","Watykan","Monako","Alandy","",""]
+   ]
+}

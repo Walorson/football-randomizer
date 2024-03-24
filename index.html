@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Randomizer</title>
+    <meta name="author" content="Szymon Gniadek">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">Fotball Randomizer</div>
+    <div class="container">
+        <div class="main-menu">
+            <div class="button" id="create-new">Create New</div>
+            <div class="button" id="load">Load File</div>
+        </div>
+        <div class="main" style="display:none">
+            <div id="boxes">
+                
+            </div>
+            <div class="side-addButton" id="sideButton"><div class="absolute">+</div></div>
+            <div class="bottomButtons">
+                <div class="beginButton" id="beginButton">Zacznij losowanie</div>
+                <div class="beginButton" id="saveJSON">Zapisz</div>
+            </div>
+        </div>
+        <div class="final" style="display:none">
+            <div class="bottomButtons">
+                <div class="beginButton" id="saveCSV">Zapisz do Excela</div>
+            </div>
+        </div>
+    </div>
+    <div class="window">
+        <div class="window-content">
+            <h2>Wczytaj zapis z pliku .json</h2>
+            <textarea id="window-textarea"></textarea>
+            <button id="loadJSON">Załaduj</button>
+        </div>
+        <div class="hideBtn"></div>
+    </div>
+    <script src="main.js"></script>
+    <script src="window.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="importAndExport.js"></script>
+</body>
+</html>
