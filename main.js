@@ -2,7 +2,6 @@ const createNewBtn = document.getElementById("create-new"); // Create new Basket
 const mainMenu = document.querySelector(".main-menu"); // Main menu - choose if create new project or load the project
 const sideBtn = document.getElementById("sideButton"); // Button which create a new basket 
 const beginBtn = document.getElementById("beginButton"); // Button which begin a row
-const loadBtn = document.getElementById("load");
 const final = document.querySelector(".final"); //Final menu of final groups :)
 const main = document.querySelector(".main"); //Main menu for create groups :)
 const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','W','U','X','Y','Z']; //Alphabet

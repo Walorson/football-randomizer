@@ -5,29 +5,41 @@ let json;
 
 /////////////// IMPORT FILE ////////////////
 loadJSON.addEventListener("click",() => {
-    json = JSON.parse(loadWindow.textarea.value);
-    
-    for(let i=0; i<json.Baskets.length; i++) {
+    let input = document.createElement('input');
+    input.type = 'file';
 
-        if(i != 0) {
-            baskets.push(new Basket);
-            
-        }
+    input.onchange = _ => {
+        let file = Array.from(input.files)[0];
+        let fileReader = new FileReader();
 
-        for(let j=0; j<json.Baskets[i].length; j++) {
+        fileReader.onload = () => {
+            json = JSON.parse(fileReader.result);
+
+            for(let i=0; i<json.Baskets.length; i++) {
+
+                if(i != 0) {
+                    baskets.push(new Basket);
+                    
+                }
         
-            if(j == 0) baskets[i].countries[0].inputContent = json.Baskets[i][0];
-            if(j > json.Baskets[i].length-2) continue;
-            baskets[i].pushCountry(json.Baskets[i][j+1]);
+                for(let j=0; j<json.Baskets[i].length; j++) {
+                
+                    if(j == 0) baskets[i].countries[0].inputContent = json.Baskets[i][0];
+                    if(j > json.Baskets[i].length-2) continue;
+                    baskets[i].pushCountry(json.Baskets[i][j+1]);
+                }
+            }
+        
+            baskets.forEach(item => item.update());
+        
+            mainMenu.setAttribute("hidden",";");
+            main.style.display = "";
         }
+
+        fileReader.readAsText(file, "utf-8");
     }
-
-    baskets.forEach(item => item.update());
-
-    mainMenu.setAttribute("hidden",";");
-    main.style.display = "";
-
-    loadWindow.close();
+    
+    input.click();
 });
 
 ///////////////// SAVE FILE /////////////////
