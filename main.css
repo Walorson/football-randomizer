@@ -86,7 +86,7 @@ body {
     user-select: none;
     transition: 0.2s ease-in-out;
 }
-.button:hover {
+.button:hover, .back:hover {
     cursor: pointer;
     transform: translateX(4px);
 }
@@ -155,4 +155,14 @@ body {
     width: 100%;
     background-color: #6b0808;
     cursor: pointer;
+}
+.back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
 }

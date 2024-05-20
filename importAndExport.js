@@ -19,7 +19,6 @@ loadJSON.addEventListener("click",() => {
 
                 if(i != 0) {
                     baskets.push(new Basket);
-                    
                 }
         
                 for(let j=0; j<json.Baskets[i].length; j++) {

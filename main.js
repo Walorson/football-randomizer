@@ -14,6 +14,12 @@ createNewBtn.addEventListener("click",() => {
     mainMenu.setAttribute("hidden",";");
     main.style.display = "";
 });
+
+const backCreateNew = document.getElementById("back-createNew");
+backCreateNew.addEventListener("click", () => {
+    mainMenu.removeAttribute("hidden");
+    main.style.display = "none";
+});
 /////////////////////////////////////////////////////////////////////////////////////////
 const boxes = document.getElementById("boxes"); // Div which contains of box (baskets)
 
