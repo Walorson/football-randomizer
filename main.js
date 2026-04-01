@@ -1,3 +1,5 @@
+//Basket = Pot //When I was writing this code in 2022 I didn't know that polish word "koszyk" doesn't mean "Basket" but "Pot" in football's nomenclature, so everywhere in this code occures word "Basket" instead of "Pot" ~ Walorson, 1st April 2026
+
 const createNewBtn = document.getElementById("create-new"); // Create new Baskets project
 const mainMenu = document.querySelector(".main-menu"); // Main menu - choose if create new project or load the project
 const sideBtn = document.getElementById("sideButton"); // Button which create a new basket 
@@ -27,7 +29,7 @@ class Basket {
     constructor() {
         this.id = baskets.length+1; 
         this.div = `<div class="box" id="box${this.id}">
-        <h3>Koszyk ${this.id}</h3>
+        <h3>Pot ${this.id}</h3>
         <div id="inputs${this.id}">
         </div>
         <div class="addButton" id="addButton${this.id}">+</div>

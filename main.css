@@ -97,7 +97,7 @@ body {
 }
 .bottomButtons {
     position: absolute;
-    bottom: 15px;
+    bottom: -10px;
     left: 50%; transform: translateX(-50%);
     display: flex;
 }
@@ -131,30 +131,6 @@ body {
     background-color: #fafafa;
     text-align: center;
     padding: 1px 0;
-}
-.window {
-    position: absolute;
-    top: -1000px; left: 50%;
-    transform: translate(-50%,50%);
-    transition: 0.45s ease-in-out;
-}
-.window-content {
-    min-height: 500px;
-    width: 600px;
-    background-color: rgb(178, 0, 74);
-    padding: 20px;
-}
-#window-textarea {
-    resize: none;
-    height: 350px;
-    width: 100%;
-    display: block;
-}
-.hideBtn {
-    height: 30px;
-    width: 100%;
-    background-color: #6b0808;
-    cursor: pointer;
 }
 .back {
     position: absolute;
